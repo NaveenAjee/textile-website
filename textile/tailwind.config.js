@@ -1,0 +1,60 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./*.html'],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#f5f3f2',
+          100: '#e8e2de',
+          200: '#d5c9c1',
+          300: '#bba89c',
+          400: '#a08778',
+          500: '#8c705f',
+          600: '#7a5f4f',
+          700: '#654c40',
+          800: '#544035',
+          900: '#46362d',
+          950: '#2a201a',
+        },
+        secondary: {
+          50: '#f2f7f5',
+          100: '#dfeae5',
+          200: '#c1d6cd',
+          300: '#9abcae',
+          400: '#6d9c8a',
+          500: '#4f8270',
+          600: '#3c685a',
+          700: '#32544a',
+          800: '#2b453d',
+          900: '#253a34',
+          950: '#13211d',
+        },
+        accent: {
+          50: '#fdf4e7',
+          100: '#fbe4c3',
+          200: '#f7ce8c',
+          300: '#f3b054',
+          400: '#f09a2c',
+          500: '#e67e13',
+          600: '#cc5f0e',
+          700: '#a84210',
+          800: '#883515',
+          900: '#702e16',
+          950: '#411508',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        serif: ['Playfair Display', 'serif'],
+      },
+      backgroundImage: {
+        'fabric-pattern': "url('/assets/patterns/fabric-pattern.svg')",
+        'cotton-texture': "url('/assets/patterns/cotton-texture.svg')",
+        'linen-texture': "url('/assets/patterns/linen-texture.svg')",
+        'silk-texture': "url('/assets/patterns/silk-texture.svg')",
+      },
+    },
+  },
+  plugins: [],
+}

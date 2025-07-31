@@ -1,0 +1,20 @@
+{
+  "name": "textile-business-website",
+  "version": "1.0.0",
+  "description": "Modern responsive website for a textile business",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/tailwind.css -o ./css/styles.css --watch"
+  },
+  "keywords": [
+    "textile",
+    "fabric",
+    "responsive",
+    "tailwind"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

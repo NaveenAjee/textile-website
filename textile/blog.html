@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - TextileCo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container-custom py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="text-2xl font-bold text-primary-600 font-display">TextileCo</a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:block">
+          <ul class="flex space-x-8">
+            <li><a href="index.html" class="text-gray-600 hover:text-primary-600 transition-colors duration-300">Home</a></li>
+            <li><a href="about.html" class="text-gray-600 hover:text-primary-600 transition-colors duration-300">About</a></li>
+            <li><a href="collections.html" class="text-gray-600 hover:text-primary-600 transition-colors duration-300">Collections</a></li>
+            <li><a href="blog.html" class="text-primary-600 font-medium">Blog</a></li>
+            <li><a href="contact.html" class="text-gray-600 hover:text-primary-600 transition-colors duration-300">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-gray-500 hover:text-primary-600 focus:outline-none" id="mobile-menu-button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Mobile Navigation -->
+      <div class="md:hidden hidden" id="mobile-menu">
+        <ul class="pt-4 pb-3 space-y-3">
+          <li><a href="index.html" class="block text-gray-600 hover:text-primary-600 transition-colors duration-300">Home</a></li>
+          <li><a href="about.html" class="block text-gray-600 hover:text-primary-600 transition-colors duration-300">About</a></li>
+          <li><a href="collections.html" class="block text-gray-600 hover:text-primary-600 transition-colors duration-300">Collections</a></li>
+          <li><a href="blog.html" class="block text-primary-600 font-medium">Blog</a></li>
+          <li><a href="contact.html" class="block text-gray-600 hover:text-primary-600 transition-colors duration-300">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-primary-600 to-primary-800 py-16 text-white">
+    <div class="container-custom">
+      <div class="max-w-2xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-display font-bold mb-4">Textile Industry Insights</h1>
+        <p class="text-lg opacity-90 mb-8">Stay updated with the latest trends, innovations, and stories from the world of textiles</p>
+        <div class="relative max-w-md mx-auto">
+          <input type="text" placeholder="Search articles..." class="w-full py-3 px-4 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500">
+          <button class="absolute right-1 top-1 bg-primary-600 hover:bg-primary-700 text-white rounded-full p-2 transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Content -->
+  <section class="py-16 bg-gray-50">
+    <div class="container-custom">
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Main Content -->
+        <div class="lg:w-2/3">
+          <!-- Featured Post -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden mb-10">
+            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="Sustainable Textile Production" class="w-full h-80 object-cover">
+            <div class="p-8">
+              <div class="flex items-center mb-4">
+                <span class="bg-primary-100 text-primary-800 text-xs font-semibold px-3 py-1 rounded-full">Sustainability</span>
+                <span class="text-gray-500 text-sm ml-4">June 15, 2023</span>
+              </div>
+              <h2 class="text-2xl font-bold font-display mb-4">The Future of Sustainable Textile Production</h2>
+              <p class="text-gray-600 mb-6">The textile industry is undergoing a significant transformation as sustainability becomes a central focus. From innovative recycling techniques to eco-friendly dyeing processes, discover how manufacturers are revolutionizing production methods to reduce environmental impact while maintaining quality and performance.</p>
+              <div class="flex items-center justify-between">
+                <a href="#" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center transition duration-300">
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+                <div class="flex items-center text-gray-500 text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                  1.2K views
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Blog Posts Grid -->
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Blog Post 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Textile Innovations" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <div class="flex items-center mb-3">
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">Innovation</span>
+                  <span class="text-gray-500 text-sm ml-3">May 28, 2023</span>
+                </div>
+                <h3 class="text-xl font-bold font-display mb-3">Smart Textiles: The Integration of Technology and Fabric</h3>
+                <p class="text-gray-600 mb-4 line-clamp-3">Explore how embedded sensors, conductive threads, and responsive materials are creating fabrics that can monitor health, regulate temperature, and even change color.</p>
+                <a href="#" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center transition duration-300">
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+            <!-- Blog Post 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1565084888279-aca607ecce0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Textile Trends" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <div class="flex items-center mb-3">
+                  <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full">Trends</span>
+                  <span class="text-gray-500 text-sm ml-3">May 12, 2023</span>
+                </div>
+                <h3 class="text-xl font-bold font-display mb-3">Color Trends for 2023: What's Hot in Textile Design</h3>
+                <p class="text-gray-600 mb-4 line-clamp-3">From earthy neutrals to vibrant digital-inspired hues, discover the color palettes that are defining this year's textile collections and fashion runways.</p>
+                <a href="#" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center transition duration-300">
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+            <!-- Blog Post 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Textile Manufacturing" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <div class="flex items-center mb-3">
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">Manufacturing</span>
+                  <span class="text-gray-500 text-sm ml-3">April 30, 2023</span>
+                </div>
+                <h3 class="text-xl font-bold font-display mb-3">Automation in Textile Manufacturing: Challenges and Opportunities</h3>
+                <p class="text-gray-600 mb-4 line-clamp-3">As robotics and AI transform production lines, we examine how automation is reshaping the textile industry workforce and creating new possibilities for efficiency.</p>
+                <a href="#" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center transition duration-300">
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+            <!-- Blog Post 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1606913419164-a8b92ac004b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Textile History" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <div class="flex items-center mb-3">
+                  <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">History</span>
+                  <span class="text-gray-500 text-sm ml-3">April 15, 2023</span>
+                </div>
+                <h3 class="text-xl font-bold font-display mb-3">From Silk Road to Digital Marketplace: The Evolution of Textile Trade</h3>
+                <p class="text-gray-600 mb-4 line-clamp-3">Trace the fascinating journey of textile commerce from ancient trade routes to today's global e-commerce platforms and the lessons we can learn from this evolution.</p>
+                <a href="#" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center transition duration-300">
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Pagination -->
+          <div class="mt-12 flex justify-center">
+            <nav class="inline-flex rounded-md shadow">
+              <a href="#" class="py-2 px-4 bg-white border border-gray-300 text-sm font-medium text-gray-500 hover:bg-gray-50">
+                Previous
+              </a>
+              <a href="#" class="py-2 px-4 bg-white border-t border-b border-gray-300 text-sm font-medium text-primary-600 hover:bg-gray-50">
+                1
+              </a>
+              <a href="#" class="py-2 px-4 bg-white border-t border-b border-gray-300 text-sm font-medium text-gray-500 hover:bg-gray-50">
+                2
+              </a>
+              <a href="#" class="py-2 px-4 bg-white border-t border-b border-gray-300 text-sm font-medium text-gray-500 hover:bg-gray-50">
+                3
+              </a>
+              <a href="#" class="py-2 px-4 bg-white border border-gray-300 text-sm font-medium text-gray-500 hover:bg-gray-50">
+                Next
+              </a>
+            </nav>
+          </div>
+        </div>
+        
+        <!-- Sidebar -->
+        <div class="lg:w-1/3">
+          <!-- Categories -->
+          <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h3 class="text-xl font-bold font-display mb-4">Categories</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="flex items-center justify-between text-gray-700 hover:text-primary-600 transition duration-300">
+                  <span>Sustainability</span>
+                  <span class="bg-gray-100 text-gray-600 text-xs font-semibold px-2 py-1 rounded-full">12</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center justify-between text-gray-700 hover:text-primary-600 transition duration-300">
+                  <span>Innovation</span>
+                  <span class="bg-gray-100 text-gray-600 text-xs font-semibold px-2 py-1 rounded-full">8</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center justify-between text-gray-700 hover:text-primary-600 transition duration-300">
+                  <span>Trends</span>
+                  <span class="bg-gray-100 text-gray-600 text-xs font-semibold px-2 py-1 rounded-full">15</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center justify-between text-gray-700 hover:text-primary-600 transition duration-300">
+                  <span>Manufacturing</span>
+                  <span class="bg-gray-100 text-gray-600 text-xs font-semibold px-2 py-1 rounded-full">7</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center justify-between text-gray-700 hover:text-primary-600 transition duration-300">
+                  <span>History</span>
+                  <span class="bg-gray-100 text-gray-600 text-xs font-semibold px-2 py-1 rounded-full">5</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center justify-between text-gray-700 hover:text-primary-600 transition duration-300">
+                  <span>Industry News</span>
+                  <span class="bg-gray-100 text-gray-600 text-xs font-semibold px-2 py-1 rounded-full">10</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Popular Posts -->
+          <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h3 class="text-xl font-bold font-display mb-4">Popular Posts</h3>
+            <div class="space-y-4">
+              <!-- Popular Post 1 -->
+              <div class="flex gap-3">
+                <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80" alt="Sustainable Textile" class="w-20 h-20 object-cover rounded">
+                <div>
+                  <h4 class="font-medium text-gray-800 line-clamp-2">The Future of Sustainable Textile Production</h4>
+                  <p class="text-gray-500 text-sm mt-1">June 15, 2023</p>
+                </div>
+              </div>
+              
+              <!-- Popular Post 2 -->
+              <div class="flex gap-3">
+                <img src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80" alt="Smart Textiles" class="w-20 h-20 object-cover rounded">
+                <div>
+                  <h4 class="font-medium text-gray-800 line-clamp-2">Smart Textiles: The Integration of Technology and Fabric</h4>
+                  <p class="text-gray-500 text-sm mt-1">May 28, 2023</p>
+                </div>
+              </div>
+              
+              <!-- Popular Post 3 -->
+              <div class="flex gap-3">
+                <img src="https://images.unsplash.com/photo-1565084888279-aca607ecce0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80" alt="Color Trends" class="w-20 h-20 object-cover rounded">
+                <div>
+                  <h4 class="font-medium text-gray-800 line-clamp-2">Color Trends for 2023: What's Hot in Textile Design</h4>
+                  <p class="text-gray-500 text-sm mt-1">May 12, 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Newsletter -->
+          <div class="bg-primary-50 rounded-lg shadow-md p-6 mb-8">
+            <h3 class="text-xl font-bold font-display mb-3">Subscribe to Our Newsletter</h3>
+            <p class="text-gray-600 mb-4">Get the latest textile industry news and insights delivered to your inbox.</p>
+            <form class="space-y-3">
+              <div>
+                <input type="email" placeholder="Your email address" class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+              </div>
+              <button type="submit" class="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded transition duration-300">
+                Subscribe
+              </button>
+            </form>
+          </div>
+          
+          <!-- Tags -->
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold font-display mb-4">Popular Tags</h3>
+            <div class="flex flex-wrap gap-2">
+              <a href="#" class="bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-full transition duration-300">#sustainable</a>
+              <a href="#" class="bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-full transition duration-300">#organic</a>
+              <a href="#" class="bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-full transition duration-300">#innovation</a>
+              <a href="#" class="bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-full transition duration-300">#cotton</a>
+              <a href="#" class="bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-full transition duration-300">#recycled</a>
+              <a href="#" class="bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-full transition duration-300">#fashion</a>
+              <a href="#" class="bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-full transition duration-300">#manufacturing</a>
+              <a href="#" class="bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-full transition duration-300">#trends</a>
+              <a href="#" class="bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-full transition duration-300">#technology</a>
+              <a href="#" class="bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-full transition duration-300">#design</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <!-- Company Info -->
+        <div>
+          <h4 class="text-xl font-bold font-display mb-4">TextileCo</h4>
+          <p class="text-gray-400 mb-4">Premium textile solutions for all your needs. Quality fabrics crafted with care and innovation.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xl font-bold font-display mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+            <li><a href="collections.html" class="text-gray-400 hover:text-white transition duration-300">Collections</a></li>
+            <li><a href="blog.html" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Collections -->
+        <div>
+          <h4 class="text-xl font-bold font-display mb-4">Collections</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Cotton Fabrics</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Silk Fabrics</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Linen Collection</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Synthetic Fabrics</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Sustainable Textiles</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-xl font-bold font-display mb-4">Contact Us</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span class="text-gray-400">123 Textile Avenue, Fabric District<br>New York, NY 10001</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <a href="mailto:info@textileco.com" class="text-gray-400 hover:text-white transition duration-300">info@textileco.com</a>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <a href="tel:+12345678900" class="text-gray-400 hover:text-white transition duration-300">+1 (234) 567-8900</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 text-sm">© 2023 TextileCo. All rights reserved.</p>
+          <div class="flex space-x-6 mt-4 md:mt-0">
+            <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Privacy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Terms of Service</a>
+            <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/12345678900" class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-3 hover:bg-green-600 transition duration-300 shadow-lg z-50">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+</html>
